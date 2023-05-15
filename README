@@ -1,0 +1,72 @@
+# Intact Car Insurance Testing
+
+This repository contains the test suite for testing the Intact Car Insurance website.
+
+## Prerequisites
+
+- Python 3.x
+- pytest
+- pytest-bdd
+- Selenium WebDriver
+- pytest-html
+- ChromeDriver (for running tests with Chrome)
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/VINI1520/intact-car-insurance-testing.git
+
+2. Install the required Python packages:
+
+pip install -r requirements.txt
+
+
+3. Download and install ChromeDriver from the official website:
+- ChromeDriver: [https://sites.google.com/chromium.org/driver/](https://sites.google.com/chromium.org/driver/)
+
+4. Update the `config.py` file with the appropriate settings if needed.
+
+## Usage
+
+To run the tests, use the following command:
+
+pytest --html=interact.html
+
+By default, pytest will discover and run all the test scenarios defined in the `intact_car_insurance.feature` file located in the `features` directory.
+
+## File Structure
+
+The file structure of this repository is as follows:
+
+intact-car-insurance-testing/
+├── features/
+│ └── intact_car_insurance.feature
+├── tests/
+│ ├── step_definitions/
+│ │ └── test_intact_car_insurance_steps.py
+│ └── test_intact_car_insurance.py
+├── config.py
+├── requirements.txt
+└── README.md
+
+
+- The `features/` directory contains the feature file(s) written in the Gherkin syntax. The `intact_car_insurance.feature` file is located in this directory.
+
+- The `tests/` directory is the main directory for your tests.
+  - The `step_definitions/` directory is within the `tests/` directory and holds the step definition file(s) for your BDD scenarios. In this case, the `test_intact_car_insurance_steps.py` file is located in this directory.
+  - The `test_intact_car_insurance.py` file, which imports and uses the step definitions, is also located in the `tests/` directory.
+
+- The `config.py` file is placed in the main project directory and stores configuration settings for the project.
+
+- The `requirements.txt` file lists the required Python packages and their versions.
+
+Please make sure that your files are organized in the specified directory structure.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to add new features or tests, please create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

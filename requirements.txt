@@ -1,0 +1,6 @@
+# requirements.txt
+
+pytest
+pytest-bdd
+selenium
+pytest-html
